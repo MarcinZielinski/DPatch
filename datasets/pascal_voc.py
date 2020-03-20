@@ -12,6 +12,8 @@ from .imdb import ImageDataset
 from .voc_eval import voc_eval
 # from utils.yolo import preprocess_train
 
+import cfgs.config as cfg
+
 
 class VOCDataset(ImageDataset):
     def __init__(self, imdb_name, datadir, batch_size, im_processor,
